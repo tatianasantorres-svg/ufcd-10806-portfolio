@@ -1,0 +1,7 @@
+scp -P 2222 limpeza_dados.sh tatianatorres@127.0.0.1:~
+ssh tatianatorres@127.0.0.1 -p 2222
+vim limpeza_dados.sh
+cat limpeza_dados.sh
+scp -P 2222 dataset_oficial_2026.csv tatianatorres@127.0.0.1:~
+sed -i 's/\r//' limpeza_dados.sh
+bash limpeza_dados.sh
